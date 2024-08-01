@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,9 +48,14 @@ const linkclass = ({ isActive }) =>
             <NavLink to="/AddLodges" className={linkclass} onClick={toggleMenu}>
               Add Lodges
             </NavLink>
-            <button className="inline-flex items-center bg-primary border-0 py-1 px-3 focus:outline-none hover:bg-secondary hover:text-primary text-secondary rounded text-base mt-4 md:mt-0">
+            <a
+              href="https://portal.esut.edu.ng/login.aspx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-primary border-0 py-1 px-3 focus:outline-none hover:bg-secondary hover:text-primary text-secondary rounded text-base mt-4 md:mt-0"
+            >
               My Portal
-            </button>
+            </a>
           </nav>
         </div>
       </header>

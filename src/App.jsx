@@ -12,6 +12,7 @@ import NotFoundPage from "./Pages/NotFoundPage";
 import LodgesPage from "./Pages/LodgesPage";
 import TestimonialPage from "./Pages/TestimonialPage";
 import LodgesLearnMore from "./Pages/LodgesLearnMore";
+import AddLodgePage from "./Pages/AddLodgePage";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -22,6 +23,7 @@ const App = () => {
       <Route path="/Lodges" element={<LodgesPage/>}/>
       <Route path="/Testimonial" element={<TestimonialPage/>}/>
       <Route path="/Lodges/:id" element={<LodgesLearnMore/>}/>
+      <Route path="/AddLodges" element={<AddLodgePage/>}/>
       <Route path="*" element={<NotFoundPage/>}/>
     </Route>)
   );
