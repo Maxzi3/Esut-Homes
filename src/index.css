@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mongolian&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer base {
+  html{
+    scroll-behavior: smooth;
+  }
+  body {
+     font-family: "Montserrat", sans-serif;
+  }
+}
+@layer components {
+  .line-before::before, .line-before::after {
+    content: '';
+    display: inline-block;
+    width: 40px; /* Adjust width as needed */
+    height: 2px; /* Adjust height as needed */
+    background-color: #640000; /* Adjust color as needed */
+    margin-right: 10px; /* Adjust spacing as needed */
+    margin-left: 10px;
+    vertical-align: middle; /* Align with text */
+  }
+  .line-before2::before, .line-before2::after{
+     content: '';
+    display: inline-block;
+    width: 10px; /* Adjust width as needed */
+    height: 2px; /* Adjust height as needed */
+    background-color: #fbe3d1; /* Adjust color as needed */
+    margin-right: 5px; /* Adjust spacing as needed */
+    margin-left: 5px;
+    vertical-align: middle; /* Align with text */
+  }
+}

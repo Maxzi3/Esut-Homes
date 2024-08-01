@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "testimonial": "The services provided by ESUT Homes have been exceptional. Their team made the whole process of finding a home seamless and stress-free.",
+    "name": "Holden Caulfield",
+    "department": "CIS DEPARTMENT"
+  },
+  {
+    "id": 2,
+    "testimonial": "ESUT Homes helped me secure my dream home. Their dedication and professionalism are unmatched.",
+    "name": "Jane Doe",
+    "department": "ECE DEPARTMENT"
+  },
+  {
+    "id": 3,
+    "testimonial": "I am extremely satisfied with the level of service provided by ESUT Homes. They were attentive to my needs and found the perfect property for me.",
+    "name": "John Smith",
+    "department": "MECHANICAL ENGINEERING"
+  },
+  {
+    "id": 4,
+    "testimonial": "The team at ESUT Homes was incredibly helpful and supportive throughout the entire process. I couldn't have asked for a better experience.",
+    "name": "Alice Johnson",
+    "department": "BIOLOGY DEPARTMENT"
+  },
+  {
+    "id": 5,
+    "testimonial": "ESUT Homes made the process of finding and purchasing a home so easy. Their expertise and knowledge were invaluable.",
+    "name": "Chris Lee",
+    "department": "CHEMISTRY DEPARTMENT"
+  },
+  {
+    "id": 6,
+    "testimonial": "I highly recommend ESUT Homes to anyone looking for a property. Their team is professional, knowledgeable, and always willing to go the extra mile.",
+    "name": "Patricia Kim",
+    "department": "PHYSICS DEPARTMENT"
+  },
+  {
+    "id": 7,
+    "testimonial": "ESUT Homes provided exceptional service and support. They found me the perfect home in no time.",
+    "name": "Michael Brown",
+    "department": "MATHEMATICS DEPARTMENT"
+  },
+  {
+    "id": 8,
+    "testimonial": "The experience I had with ESUT Homes was fantastic. They were professional, efficient, and found me exactly what I was looking for.",
+    "name": "Nancy Wilson",
+    "department": "HISTORY DEPARTMENT"
+  },
+  {
+    "id": 9,
+    "testimonial": "ESUT Homes exceeded my expectations. Their team is highly skilled and dedicated to finding the perfect property for their clients.",
+    "name": "David Martinez",
+    "department": "ART DEPARTMENT"
+  },
+  {
+    "id": 10,
+    "testimonial": "I had a wonderful experience with ESUT Homes. They were attentive, responsive, and helped me find the perfect home.",
+    "name": "Emily Davis",
+    "department": "ENGLISH DEPARTMENT"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Sunrise Apartments",
+    "image": "https://example.com/images/sunrise_apartments.jpg",
+    "location": "123 University Ave, College Town",
+    "area": "College Town",
+    "price": "$600 per month",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry Facilities",
+      "24/7 Security",
+      "Study Room",
+      "Fitness Center"
+    ],
+    "contact": {
+      "phone": "(123) 456-7890",
+      "email": "info@sunriseapartments.com"
+    },
+    "description": "Sunrise Apartments offers a comfortable and secure living environment for students. Located just a few minutes from campus, it provides modern amenities and a friendly community."
+  },
+  {
+    "id": 2,
+    "name": "Evergreen Lodge",
+    "image": "https://example.com/images/evergreen_lodge.jpg",
+    "location": "456 College Rd, University City",
+    "area": "University City",
+    "price": "$550 per month",
+    "amenities": [
+      "High-Speed Internet",
+      "Air Conditioning",
+      "Fully Furnished",
+      "On-site Parking",
+      "Swimming Pool"
+    ],
+    "contact": {
+      "phone": "(987) 654-3210",
+      "email": "contact@evergreenlodge.com"
+    },
+    "description": "Evergreen Lodge offers affordable, fully furnished apartments for students. Enjoy a range of amenities, including a swimming pool and on-site parking, all within walking distance to campus."
+  },
+  {
+    "id": 3,
+    "name": "Maplewood Residences",
+    "image": "https://example.com/images/maplewood_residences.jpg",
+    "location": "789 Dorm St, Collegeville",
+    "area": "Collegeville",
+    "price": "$700 per month",
+    "amenities": [
+      "Private Bathroom",
+      "Cable TV",
+      "Gym Access",
+      "Game Room",
+      "Study Areas"
+    ],
+    "contact": {
+      "phone": "(555) 123-4567",
+      "email": "info@maplewoodresidences.com"
+    },
+    "description": "Maplewood Residences provides premium student housing with private bathrooms and a range of recreational facilities. Ideal for students who value both comfort and convenience."
+  },
+  {
+    "id": 4,
+    "name": "Campus Corner Apartments",
+    "image": "https://example.com/images/campus_corner.jpg",
+    "location": "321 University Blvd, Student City",
+    "area": "Student City",
+    "price": "$650 per month",
+    "amenities": [
+      "Shared Kitchen",
+      "Study Lounges",
+      "24/7 Maintenance",
+      "Outdoor BBQ Area",
+      "Bicycle Storage"
+    ],
+    "contact": {
+      "phone": "(222) 333-4444",
+      "email": "leasing@campuscorner.com"
+    },
+    "description": "Campus Corner Apartments are designed with students in mind, offering shared kitchens and study lounges, as well as a vibrant community atmosphere close to campus."
+  },
+  {
+    "id": 5,
+    "name": "Oakwood Flats",
+    "image": "https://example.com/images/oakwood_flats.jpg",
+    "location": "654 Student Lane, Academic Town",
+    "area": "Academic Town",
+    "price": "$620 per month",
+    "amenities": [
+      "In-Unit Washer/Dryer",
+      "Pet-Friendly",
+      "On-Site Cafeteria",
+      "Study Desks",
+      "Weekly Cleaning Service"
+    ],
+    "contact": {
+      "phone": "(444) 555-6666",
+      "email": "info@oakwoodflats.com"
+    },
+    "description": "Oakwood Flats offers spacious, pet-friendly apartments with in-unit laundry and a range of student-friendly services. Enjoy the convenience of an on-site cafeteria and weekly cleaning."
+  },
+  {
+    "id": 6,
+    "name": "Pineview Studios",
+    "image": "https://example.com/images/pineview_studios.jpg",
+    "location": "321 Dormitory Rd, College Town",
+    "area": "College Town",
+    "price": "$580 per month",
+    "amenities": [
+      "Wi-Fi",
+      "Gym Access",
+      "Study Lounge",
+      "24/7 Security",
+      "Bicycle Parking"
+    ],
+    "contact": {
+      "phone": "(666) 777-8888",
+      "email": "contact@pineviewstudios.com"
+    },
+    "description": "Pineview Studios offers affordable and modern living spaces for students. Enjoy the convenience of a study lounge and gym access, along with 24/7 security."
+  },
+  {
+    "id": 7,
+    "name": "Riverside Dorms",
+    "image": "https://example.com/images/riverside_dorms.jpg",
+    "location": "147 Riverside Dr, University City",
+    "area": "University City",
+    "price": "$540 per month",
+    "amenities": [
+      "Wi-Fi",
+      "Study Areas",
+      "Shared Kitchen",
+      "24/7 Security",
+      "Laundry Facilities"
+    ],
+    "contact": {
+      "phone": "(888) 999-0000",
+      "email": "info@riversidedorms.com"
+    },
+    "description": "Riverside Dorms provides a safe and friendly environment for students. Located by the river, it offers beautiful views and easy access to campus facilities."
+  },
+  {
+    "id": 8,
+    "name": "Elmwood Apartments",
+    "image": "https://example.com/images/elmwood_apartments.jpg",
+    "location": "789 University St, Academic Town",
+    "area": "Academic Town",
+    "price": "$620 per month",
+    "amenities": [
+      "Wi-Fi",
+      "Fitness Center",
+      "Game Room",
+      "On-site Parking",
+      "Study Lounge"
+    ],
+    "contact": {
+      "phone": "(333) 444-5555",
+      "email": "contact@elmwoodapartments.com"
+    },
+    "description": "Elmwood Apartments offer a comfortable and engaging living environment with a game room and fitness center. Ideal for students looking for a balanced lifestyle."
+  },
+  {
+    "id": 9,
+    "name": "Birchwood Residence",
+    "image": "https://example.com/images/birchwood_residence.jpg",
+    "location": "456 Dorm Rd, College City",
+    "area": "College City",
+    "price": "$590 per month",
+    "amenities": [
+      "Wi-Fi",
+      "Air Conditioning",
+      "Study Lounges",
+      "Fitness Center",
+      "24/7 Maintenance"
+    ],
+    "contact": {
+      "phone": "(777) 888-9999",
+      "email": "info@birchwoodresidence.com"
+    },
+    "description": "Birchwood Residence provides a modern living experience with essential amenities. Located close to campus, it offers a perfect blend of convenience and comfort."
+  },
+  {
+    "id": 10,
+    "name": "Cedar Grove Apartments",
+    "image": "https://example.com/images/cedar_grove.jpg",
+    "location": "654 University Rd, College Town",
+    "area": "College Town",
+    "price": "$640 per month",
+    "amenities": [
+      "Wi-Fi",
+      "Swimming Pool",
+      "Gym Access",
+      "Study Rooms",
+      "24/7 Security"
+    ],
+    "contact": {
+      "phone": "(444) 555-7777",
+      "email": "contact@cedargrove.com"
+    },
+    "description": "Cedar Grove Apartments offers premium student housing with a swimming pool and gym access. Located close to campus, it provides a safe and vibrant community."
+  }
+]
