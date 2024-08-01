@@ -27,41 +27,41 @@ const Section5 = () => {
     >
       <div className="flex gap-4 p-4 border-r-2 border-secondary">
         <h1 className="text-4xl font-bold">
-          {startCounting ? (
-            <CountUp start={1} end={finalValues.areaPopulation} duration={3} />
-          ) : (
-            finalValues.areaPopulation
-          )}
+          <CountUp
+            start={startCounting ? 1 : finalValues.areaPopulation}
+            end={finalValues.areaPopulation}
+            duration={3}
+          />
         </h1>
         <h1 className="text-xl w-24 pr-32">Area Population</h1>
       </div>
       <div className="flex gap-4 p-4 border-r-2 border-secondary">
         <h1 className="text-4xl font-bold">
-          {startCounting ? (
-            <CountUp start={1} end={finalValues.totalProperties} duration={3} />
-          ) : (
-            finalValues.totalProperties
-          )}
+          <CountUp
+            start={startCounting ? 1 : finalValues.totalProperties}
+            end={finalValues.totalProperties}
+            duration={3}
+          />
         </h1>
         <h1 className="text-xl w-24 pr-32">Total Properties</h1>
       </div>
       <div className="flex gap-4 p-4 border-r-2 border-secondary">
         <h1 className="text-4xl font-bold">
-          {startCounting ? (
-            <CountUp start={1} end={finalValues.averageHouses} duration={3} />
-          ) : (
-            finalValues.averageHouses
-          )}
+          <CountUp
+            start={startCounting ? 1 : finalValues.averageHouses}
+            end={finalValues.averageHouses}
+            duration={3}
+          />
         </h1>
         <h1 className="text-xl w-24 pr-32">Average Houses</h1>
       </div>
       <div className="flex gap-4 p-4">
         <h1 className="text-4xl font-bold">
-          {startCounting ? (
-            <CountUp start={1} end={finalValues.totalBranches} duration={3} />
-          ) : (
-            finalValues.totalBranches
-          )}
+          <CountUp
+            start={startCounting ? 1 : finalValues.totalBranches}
+            end={finalValues.totalBranches}
+            duration={3}
+          />
         </h1>
         <h1 className="text-xl w-24">Total Branches</h1>
       </div>
@@ -70,3 +70,4 @@ const Section5 = () => {
 };
 
 export default Section5;
+  
