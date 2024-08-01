@@ -8,9 +8,7 @@ export default defineConfig({
     include: ["react-countup"],
   },
   build: {
-    rollupOptions: {
-      external: ["react-countup"],
-    },
+    outDir: 'dist', // This is the default value
   },
   server: {
     port: 3000,
