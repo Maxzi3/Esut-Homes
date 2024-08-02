@@ -88,11 +88,11 @@ const AddLodgePage = () => {
         <label className="text-xl font-semibold p-3 md:mx-32 mx-6">
           Amenities
         </label>
-        <ul className=" md:mx-36 mx-8  text-primary flex flex-col items-center">
+        <ul className=" md:mx-36 mx-8 text-primary flex flex-col md:items-stretch items-center">
           {Array.from({ length: 5 }, (_, index) => (
             <li key={index}>
               <input
-                className="border-none outline-none p-3 md:w-9/12 w-full mb-4 text-black"
+                className="border-none outline-none p-3 w-full mb-4 text-black"
                 type="text"
                 name={`amenities${index + 1}`}
                 placeholder={`Amenities${index + 1}`}

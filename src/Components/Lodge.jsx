@@ -54,7 +54,10 @@ const Lodge = ({ Lodge }) => {
               >
                 Learn More <FaArrowRight className="ml-2 animate-bounce" />
               </Link>
-              <span>{Lodge.area}</span>
+              <span className="flex items-center">
+                <FaLocationDot className="ml-2 animate-bounce" />
+                {Lodge.area}
+              </span>
             </div>
           </div>
         </div>
