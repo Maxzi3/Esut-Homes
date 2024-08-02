@@ -10,8 +10,8 @@ const Navbar = () => {
   };
 const linkclass = ({ isActive }) =>
   isActive
-    ? ' mr-5 hover:text-gray-900 overline'
-    : 'mr-5 hover:text-gray-900 ';
+    ? ' mr-4 hover:text-gray-900 overline'
+    : 'mr-4 hover:text-gray-900 ';
   return (
     <div>
       <header className="fixed top-0 left-0 right-0 z-50 text-primary body-font w-full bg-secondary">
