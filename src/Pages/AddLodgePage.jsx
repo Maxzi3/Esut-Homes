@@ -47,9 +47,13 @@ const AddLodgePage = () => {
         className="container bg-secondary w-10/12 m-auto flex flex-col h-auto p-10"
         onSubmit={handleSubmit}
       >
-        <h1 className="text-center text-3xl font-bold">Add Lodge Page</h1>
+        <h1 className="text-center md:text-3xl p-2 text-xl underline font-bold">
+          Add Lodge Page
+        </h1>
 
-        <label className="text-xl font-semibold p-3 mx-28">Lodge Name</label>
+        <label className="text-xl font-semibold p-3 md:mx-28 mx-4">
+          Lodge Name
+        </label>
         <input
           className="border-none outline-none p-3 w-9/12 mb-4 mx-auto text-black"
           type="text"
@@ -59,7 +63,9 @@ const AddLodgePage = () => {
           onChange={handleChange}
         />
 
-        <label className="text-xl font-semibold p-3 mx-28">Location</label>
+        <label className="text-xl font-semibold p-3 md:mx-28 mx-4">
+          Location
+        </label>
         <input
           className="border-none outline-none p-3 w-9/12 mb-4 mx-auto text-black"
           type="text"
@@ -69,7 +75,7 @@ const AddLodgePage = () => {
           onChange={handleChange}
         />
 
-        <label className="text-xl font-semibold p-3 mx-28">Price</label>
+        <label className="text-xl font-semibold p-3 md:mx-28 mx-4">Price</label>
         <input
           className="border-none outline-none p-3 w-9/12 mb-4 mx-auto text-black"
           type="text"
@@ -79,12 +85,14 @@ const AddLodgePage = () => {
           onChange={handleChange}
         />
 
-        <label className="text-xl font-semibold p-3 mx-32">Amenities</label>
-        <ul className="list-disc px-36 text-primary">
+        <label className="text-xl font-semibold p-3 md:mx-32 mx-6">
+          Amenities
+        </label>
+        <ul className=" md:mx-36 mx-8  text-primary flex flex-col items-center">
           {Array.from({ length: 5 }, (_, index) => (
             <li key={index}>
               <input
-                className="border-none outline-none p-3 w-9/12 mb-4 text-black"
+                className="border-none outline-none p-3 md:w-9/12 w-full mb-4 text-black"
                 type="text"
                 name={`amenities${index + 1}`}
                 placeholder={`Amenities${index + 1}`}
@@ -95,7 +103,9 @@ const AddLodgePage = () => {
           ))}
         </ul>
 
-        <label className="text-xl font-semibold p-3 mx-28">Contact</label>
+        <label className="text-xl font-semibold p-3 md:mx-28 mx-4">
+          Contact
+        </label>
         <input
           className="border-none outline-none p-3 w-9/12 mb-4 mx-auto text-black"
           type="text"
@@ -105,7 +115,7 @@ const AddLodgePage = () => {
           onChange={handleChange}
         />
 
-        <label className="text-xl font-semibold p-3 mx-28">Email</label>
+        <label className="text-xl font-semibold p-3 md:mx-28 mx-4">Email</label>
         <input
           className="border-none outline-none p-3 w-9/12 mb-4 mx-auto text-black"
           type="email"
