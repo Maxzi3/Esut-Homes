@@ -1,8 +1,19 @@
 import React from 'react'
+import Aos from "aos";
+import { useEffect } from 'react';
 
 const LodgeMore = ({Lodge, index}) => {
+   useEffect(() => {
+     Aos.init({
+       duration: 1000, // Animation duration in milliseconds
+       once: true,
+     });
+   }, []);
   return (
-    <div className="p-4 border md:w-11/12 mx-auto bg-secondary rounded-md">
+    <div
+      className="p-4 border md:w-11/12 mx-auto bg-secondary rounded-md"
+      data-aos="fade-up"
+    >
       <img
         src="https://dummyimage.com/721x401"
         alt={Lodge.name}

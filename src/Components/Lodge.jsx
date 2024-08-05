@@ -1,11 +1,16 @@
 import React from "react";
-import { useState } from "react";
-import useIntersectionObserver from "./useIntersectionObserver";
+import { useState, useEffect } from "react";
+import Aos from "aos";
 import { Link } from "react-router-dom";
 import { FaLocationDot, FaArrowRight } from "react-icons/fa6";
 
 const Lodge = ({ Lodge }) => {
-  const { ref, isIntersecting } = useIntersectionObserver();
+  useEffect(() =>{
+    Aos.init(
+      {duration: 1000, // Animation duration in milliseconds
+  once: true, }
+    )
+  },[])
   const [showFullDescription, setshowFullDescription] = useState(false);
   let description = Lodge.description;
   // Ensure Lodge and Lodge.description are defined before slicing
@@ -21,12 +26,11 @@ const Lodge = ({ Lodge }) => {
   }
 
   return (
-    <div ref={ref}>
+    <div>
       <div className="p-4 my-14">
         <div
-          className={`border-2 border-primary bg-primary text-secondary border-opacity-60 rounded-lg overflow-hidden ${
-            isIntersecting ? "animate-fadeInBottom" : ""
-          }`}
+          className="border-2 border-primary bg-primary text-secondary border-opacity-60 rounded-lg overflow-hidden "
+          data-aos="fade-up"
         >
           <img
             className="lg:h-48 md:h-36 w-full object-cover object-center"

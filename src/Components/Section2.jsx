@@ -1,15 +1,18 @@
 import React from "react";
 import { FaDollarSign, FaWallet, FaFileLines, FaLock } from "react-icons/fa6";
-import useIntersectionObserver from "./useIntersectionObserver";
+import Aos from "aos";
+import { useEffect } from "react";
 
 const Section2 = () => {
-  const { ref, isIntersecting } = useIntersectionObserver();
+  useEffect(() => {
+    Aos.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true,
+    });
+  }, []);
 
   return (
-    <div
-      ref={ref}
-      className={`${isIntersecting ? "animate-fadeInBottom" : ""}`}
-    >
+    <div data-aos="fade-up">
       <h1 className="text-center line-before text-2xl text-secondary font-bold pt-14">
         Our Services
       </h1>
@@ -20,7 +23,8 @@ const Section2 = () => {
             No DownPayment
           </h1>
           <p className="text-center text-md text-gray-600 font-medium">
-            No down payment is required for our services. We understand that everyone's financial situation is different
+            No down payment is required for our services. We understand that
+            everyone's financial situation is different
           </p>
         </div>
         <div className="">
@@ -29,7 +33,8 @@ const Section2 = () => {
             All Cash Offer
           </h1>
           <p className="text-center text-md text-gray-600 font-medium">
-            We offer all cash for your property, so you can sell your property quickly and easily.
+            We offer all cash for your property, so you can sell your property
+            quickly and easily.
           </p>
         </div>
         <div className="">
@@ -38,7 +43,8 @@ const Section2 = () => {
             Experts in Your Corner
           </h1>
           <p className="text-center text-md text-gray-600 font-medium">
-            Our team of experts will guide you through the process and ensure that everything runs smoothly.
+            Our team of experts will guide you through the process and ensure
+            that everything runs smoothly.
           </p>
         </div>
         <div className="">
@@ -47,7 +53,8 @@ const Section2 = () => {
             Locked in Pricing
           </h1>
           <p className="text-center text-md text-gray-600 font-medium">
-            Our pricing is locked in, so you can rest assured that you'll get a fair deal.
+            Our pricing is locked in, so you can rest assured that you'll get a
+            fair deal.
           </p>
         </div>
       </div>

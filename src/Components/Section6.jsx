@@ -1,17 +1,25 @@
 import React from "react";
 import { FaQuoteRight } from "react-icons/fa";
-import useIntersectionObserver from "./useIntersectionObserver";
+import Aos from "aos";
+import { useEffect } from "react";
+
 
 const Section6 = ({ Testimonial, index }) => {
-      const { ref, isIntersecting } = useIntersectionObserver();
+       useEffect(() => {
+         Aos.init({
+           duration: 1000, // Animation duration in milliseconds
+           once: true,
+         });
+       }, []);
   return (
-    <div ref={ref} className={`p-4 w-full mx-auto`}>
+    <div className={`p-4 w-full mx-auto`}>
       <div
         className={`h-full p-8 rounded ${
           index % 2 === 0
             ? "bg-secondary text-primary hover:bg-primary hover:text-secondary"
             : "bg-primary text-secondary hover:bg-secondary hover:text-primary"
-        } ${isIntersecting ? "animate-fadeInBottom" : ""} `}
+        } `}
+        data-aos="fade-up"
       >
         <FaQuoteRight className="block w-5 h-5 mb-4" />
         <p className="leading-relaxed mb-6">{Testimonial.testimonial}</p>

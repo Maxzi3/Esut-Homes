@@ -1,16 +1,17 @@
 import React from 'react'
-import useIntersectionObserver from './useIntersectionObserver';
+import Aos from "aos";
+import { useEffect } from "react";
 
 const Section7 = () => {
-     const { ref, isIntersecting } = useIntersectionObserver();
+      useEffect(() => {
+        Aos.init({
+          duration: 1000, // Animation duration in milliseconds
+          once: true,
+        });
+      }, []);
   return (
     <div>
-      <section
-        ref={ref}
-        className={`text-secondary body-font  ${
-          isIntersecting ? "animate-fadeInBottom" : ""
-        }`}
-      >
+      <section className="text-secondary body-font " data-aos="fade-up">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center  mb-20">
             <h1 className="sm:text-3xl text-2xl  title-font font-bold mb-4">

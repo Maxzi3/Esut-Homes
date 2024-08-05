@@ -1,8 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 // import CountUp from "react-countup";
-import useIntersectionObserver from "./useIntersectionObserver";
+import Aos from "aos";
+import { useEffect } from "react";
 
 const Section5 = () => {
+    useEffect(() => {
+      Aos.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true,
+      });
+    }, []);
   // const finalValues = {
   //   areaPopulation: 305,
   //   totalProperties: 1090,
@@ -24,9 +31,11 @@ const Section5 = () => {
     <div
       // ref={ref}
       className="flex md:flex-row flex-col justify-between w-10/12 my-32 md:mx-20 mx-10 md:gap-0 gap-8 text-secondary"
+      data-aos="fade-up"
     >
       <div className="flex gap-4 p-4 border-r-2 border-secondary">
-        <h1 className="text-4xl font-bold">305
+        <h1 className="text-4xl font-bold">
+          305
           {/* <CountUp
             start={startCounting ? 1 : finalValues.areaPopulation}
             end={finalValues.areaPopulation}
@@ -36,7 +45,8 @@ const Section5 = () => {
         <h1 className="text-xl w-24 pr-32">Area Population</h1>
       </div>
       <div className="flex gap-4 p-4 border-r-2 border-secondary">
-        <h1 className="text-4xl font-bold">1090
+        <h1 className="text-4xl font-bold">
+          1090
           {/* <CountUp
             start={startCounting ? 1 : finalValues.totalProperties}
             end={finalValues.totalProperties}
@@ -46,7 +56,8 @@ const Section5 = () => {
         <h1 className="text-xl w-24 pr-32">Total Properties</h1>
       </div>
       <div className="flex gap-4 p-4 border-r-2 border-secondary">
-        <h1 className="text-4xl font-bold">209
+        <h1 className="text-4xl font-bold">
+          209
           {/* <CountUp
             start={startCounting ? 1 : finalValues.averageHouses}
             end={finalValues.averageHouses}
@@ -56,7 +67,8 @@ const Section5 = () => {
         <h1 className="text-xl w-24 pr-32">Average Houses</h1>
       </div>
       <div className="flex gap-4 p-4">
-        <h1 className="text-4xl font-bold">67
+        <h1 className="text-4xl font-bold">
+          67
           {/* <CountUp
             start={startCounting ? 1 : finalValues.totalBranches}
             end={finalValues.totalBranches}

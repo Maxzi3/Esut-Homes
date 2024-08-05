@@ -1,19 +1,23 @@
 import React from "react";
-import useIntersectionObserver from "./useIntersectionObserver";
+import Aos from "aos";
+import { useEffect } from "react";
 
 const Section3 = () => {
-  const { ref, isIntersecting } = useIntersectionObserver();
+   useEffect(() => {
+     Aos.init({
+       duration: 1000, // Animation duration in milliseconds
+       once: true,
+     });
+   }, []);
 
   return (
-    <div ref={ref} className="flex flex-col md:flex-row w-10/12 m-auto my-20">
+    <div className="flex flex-col md:flex-row w-10/12 m-auto my-20">
       <div className="bg-secondary px-20 w-full md:w-1/2 text-primary">
-        <h1 className="line-before2 md:text-xl text-sm  text-center pt-20 uppercase font-bold">Work Flow</h1>
+        <h1 className="line-before2 md:text-xl text-sm  text-center pt-20 uppercase font-bold">
+          Work Flow
+        </h1>
         <h2 className="md:text-3xl text-xl text-center py-4">How It Works</h2>
-        <div
-          className={`container ${
-            isIntersecting ? "animate-fadeInBottom" : ""
-          }`}
-        >
+        <div className="container" data-aos="fade-up">
           <div className="flex flex-col md:flex-row text-center w-full my-14 md:gap-2 gap-8 items-center">
             <div>
               <h1 className="w-20 m-auto p-5 text-secondary hover:bg-secondary hover:text-primary font-bold text-4xl bg-primary rounded-full">
@@ -30,7 +34,7 @@ const Section3 = () => {
               </h1>
               <h1 className="p-4 font-bold text-sm">Meet Your Agent</h1>
               <p className="text-base">
-               Meet your agent and discuss your needs and preferences
+                Meet your agent and discuss your needs and preferences
               </p>
             </div>
           </div>
@@ -41,7 +45,7 @@ const Section3 = () => {
               </h1>
               <h1 className="p-4 font-bold text-sm">Close The Deal</h1>
               <p className="text-base">
-               Close the deal and get the keys to your new home
+                Close the deal and get the keys to your new home
               </p>
             </div>
             <div>

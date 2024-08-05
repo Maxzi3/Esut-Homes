@@ -5,6 +5,7 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
+import "aos/dist/aos.css";
 import MainLayout from "./Layouts/MainLayout";
 import Homepage from "./Pages/Homepage";
 import AboutPage from "./Pages/AboutPage";
