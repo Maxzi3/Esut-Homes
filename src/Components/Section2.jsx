@@ -1,64 +1,54 @@
-import React from "react";
 import { FaDollarSign, FaWallet, FaFileLines, FaLock } from "react-icons/fa6";
 import Aos from "aos";
 import { useEffect } from "react";
 
 const Section2 = () => {
   useEffect(() => {
-    Aos.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true,
-    });
+    Aos.init({ duration: 1000, once: true });
   }, []);
 
+  const services = [
+    {
+      icon: <FaDollarSign className="text-4xl  mb-4" />,
+      title: "No DownPayment",
+      desc: "No down payment is required. We understand that everyone’s financial situation is different.",
+    },
+    {
+      icon: <FaWallet className="text-4xl mb-4" />,
+      title: "All Cash Offer",
+      desc: "We offer all cash for your property so you can sell quickly and easily.",
+    },
+    {
+      icon: <FaFileLines className="text-4xl  mb-4" />,
+      title: "Experts in Your Corner",
+      desc: "Our team will guide you through the process and ensure everything runs smoothly.",
+    },
+    {
+      icon: <FaLock className="text-4xl  mb-4" />,
+      title: "Locked in Pricing",
+      desc: "Our pricing is locked in, so you’ll always get a fair and transparent deal.",
+    },
+  ];
+
   return (
-    <div data-aos="fade-up">
-      <h1 className="text-center line-before text-2xl text-secondary font-bold pt-14">
+    <section className="py-20 px-4 text-secondary" data-aos="fade-up">
+      <h1 className="text-3xl md:text-4xl font-bold text-center text-secondary uppercase mb-12">
         Our Services
       </h1>
-      <div className="flex flex-col md:flex-row gap-10 md:gap-4 py-14 w-4/5 m-auto">
-        <div className="">
-          <FaDollarSign className="text-secondary text-5xl m-auto" />
-          <h1 className="text-xl p-4 font-semibold text-gray-800 text-center">
-            No DownPayment
-          </h1>
-          <p className="text-center text-md text-gray-600 font-medium">
-            No down payment is required for our services. We understand that
-            everyone's financial situation is different
-          </p>
-        </div>
-        <div className="">
-          <FaWallet className="text-secondary text-5xl m-auto" />
-          <h1 className="text-xl p-4 font-semibold text-gray-800 text-center">
-            All Cash Offer
-          </h1>
-          <p className="text-center text-md text-gray-600 font-medium">
-            We offer all cash for your property, so you can sell your property
-            quickly and easily.
-          </p>
-        </div>
-        <div className="">
-          <FaFileLines className="text-secondary text-5xl m-auto" />
-          <h1 className="text-xl pt-4 pb-4 font-semibold text-gray-800 text-center">
-            Experts in Your Corner
-          </h1>
-          <p className="text-center text-md text-gray-600 font-medium">
-            Our team of experts will guide you through the process and ensure
-            that everything runs smoothly.
-          </p>
-        </div>
-        <div className="">
-          <FaLock className="text-secondary text-5xl m-auto" />
-          <h1 className="text-xl py-4 font-semibold text-gray-800 text-center">
-            Locked in Pricing
-          </h1>
-          <p className="text-center text-md text-gray-600 font-medium">
-            Our pricing is locked in, so you can rest assured that you'll get a
-            fair deal.
-          </p>
-        </div>
+
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center text-center px-6 py-8 border rounded-lg  shadow hover:shadow-md transition"
+          >
+            {service.icon}
+            <h2 className="text-lg font-semibold  mb-2">{service.title}</h2>
+            <p className="text-sm ">{service.desc}</p>
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

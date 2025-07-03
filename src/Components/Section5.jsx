@@ -1,85 +1,53 @@
-import React, { useState} from "react";
-// import CountUp from "react-countup";
-import Aos from "aos";
 import { useEffect } from "react";
+import Aos from "aos";
+// import CountUp from "react-countup";
 
 const Section5 = () => {
-    useEffect(() => {
-      Aos.init({
-        duration: 1000, // Animation duration in milliseconds
-        once: true,
-      });
-    }, []);
-  // const finalValues = {
-  //   areaPopulation: 305,
-  //   totalProperties: 1090,
-  //   averageHouses: 209,
-  //   totalBranches: 67,
-  // };
-
-  // const [startCounting, setStartCounting] = useState(false);
-
-  // const { ref, isIntersecting } = useIntersectionObserver();
-
-  // useEffect(() => {
-  //   if (isIntersecting) {
-  //     setStartCounting(true);
-  //   }
-  // }, [isIntersecting]);
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true });
+  }, []);
 
   return (
-    <div
-      // ref={ref}
-      className="flex md:flex-row flex-col justify-between w-10/12 my-32 md:mx-20 mx-10 md:gap-0 gap-8 text-secondary"
-      data-aos="fade-up"
-    >
-      <div className="flex gap-4 p-4 border-r-2 border-secondary">
-        <h1 className="text-4xl font-bold">
-          305
-          {/* <CountUp
-            start={startCounting ? 1 : finalValues.areaPopulation}
-            end={finalValues.areaPopulation}
-            duration={3}
-          /> */}
-        </h1>
-        <h1 className="text-xl w-24 pr-32">Area Population</h1>
+    <section className="w-full py-20 " data-aos="fade-up">
+      <div className="grid max-w-6xl grid-cols-1 gap-10 px-6 mx-auto text-center sm:grid-cols-2 md:grid-cols-4 text-secondary">
+        {/* Single Stat */}
+        <div className="flex flex-col items-center ">
+          <h1 className="text-5xl font-bold ">
+            305
+            {/* <CountUp end={305} duration={3} /> */}
+          </h1>
+          <p className="mt-2 text-lg font-medium">Area Population</p>
+        </div>
+
+        {/* Single Stat */}
+        <div className="flex flex-col items-center">
+          <h1 className="text-5xl font-bold ">
+            1090
+            {/* <CountUp end={1090} duration={3} /> */}
+          </h1>
+          <p className="mt-2 text-lg font-medium">Total Properties</p>
+        </div>
+
+        {/* Single Stat */}
+        <div className="flex flex-col items-center">
+          <h1 className="text-5xl font-bold ">
+            209
+            {/* <CountUp end={209} duration={3} /> */}
+          </h1>
+          <p className="mt-2 text-lg font-medium">Average Houses</p>
+        </div>
+
+        {/* Single Stat */}
+        <div className="flex flex-col items-center">
+          <h1 className="text-5xl font-bold ">
+            67
+            {/* <CountUp end={67} duration={3} /> */}
+          </h1>
+          <p className="mt-2 text-lg font-medium">Total Branches</p>
+        </div>
       </div>
-      <div className="flex gap-4 p-4 border-r-2 border-secondary">
-        <h1 className="text-4xl font-bold">
-          1090
-          {/* <CountUp
-            start={startCounting ? 1 : finalValues.totalProperties}
-            end={finalValues.totalProperties}
-            duration={3}
-          /> */}
-        </h1>
-        <h1 className="text-xl w-24 pr-32">Total Properties</h1>
-      </div>
-      <div className="flex gap-4 p-4 border-r-2 border-secondary">
-        <h1 className="text-4xl font-bold">
-          209
-          {/* <CountUp
-            start={startCounting ? 1 : finalValues.averageHouses}
-            end={finalValues.averageHouses}
-            duration={3}
-          /> */}
-        </h1>
-        <h1 className="text-xl w-24 pr-32">Average Houses</h1>
-      </div>
-      <div className="flex gap-4 p-4">
-        <h1 className="text-4xl font-bold">
-          67
-          {/* <CountUp
-            start={startCounting ? 1 : finalValues.totalBranches}
-            end={finalValues.totalBranches}
-            duration={3}
-          /> */}
-        </h1>
-        <h1 className="text-xl w-24">Total Branches</h1>
-      </div>
-    </div>
+    </section>
   );
 };
 
 export default Section5;
-  

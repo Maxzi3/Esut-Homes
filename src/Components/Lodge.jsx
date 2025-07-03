@@ -1,68 +1,59 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import Aos from "aos";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { FaLocationDot, FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import Aos from "aos";
 
 const Lodge = ({ Lodge }) => {
-  useEffect(() =>{
-    Aos.init(
-      {duration: 1000, // Animation duration in milliseconds
-  once: true, }
-    )
-  },[])
-  const [showFullDescription, setshowFullDescription] = useState(false);
-  let description = Lodge.description;
-  // Ensure Lodge and Lodge.description are defined before slicing
-  if (Lodge && Lodge.description) {
-    if (!showFullDescription) {
-      description = Lodge.description.slice(0, 122) + "...";
-    } else {
-      description = Lodge.description;
-    }
-  } else {
-    // Provide a fallback for undefined Lodge or Lodge.description
-    description = "No description available.";
-  }
+  const [showFullDescription, setShowFullDescription] = useState(false);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true });
+  }, []);
+
+  const description = Lodge?.description
+    ? showFullDescription
+      ? Lodge.description
+      : Lodge.description.slice(0, 122) + "..."
+    : "No description available.";
 
   return (
-    <div>
-      <div className="p-4 my-14">
-        <div
-          className="border-2 border-primary bg-primary text-secondary border-opacity-60 rounded-lg overflow-hidden "
-          data-aos="fade-up"
-        >
-          <img
-            className="lg:h-48 md:h-36 w-full object-cover object-center"
-            src="https://dummyimage.com/721x401"
-            alt={Lodge.name}
-          ></img>
-          <div className="p-6">
-            <h2 className="tracking-widest text-xs title-font font-medium mb-1">
-              DETAILS
-            </h2>
-            <h1 className="title-font text-lg font-medium mb-3">
-              {Lodge.name}
-            </h1>
-            <p className="leading-relaxed mb-3">{description}</p>
-            <button
-              onClick={() => setshowFullDescription((prevState) => !prevState)}
-              className="text-secondary mb-5 hover:text-gray-900"
-            >
-              {showFullDescription ? "Less" : "More"}
-            </button>
-            <div className="flex justify-between items-center text-sm">
-              <Link
-                to={`/Lodges/${Lodge.id}`}
-                className="text-secondary hover:text-gray-900 inline-flex items-center md:mb-2 lg:mb-0"
-              >
-                Learn More <FaArrowRight className="ml-2 animate-bounce" />
-              </Link>
-              <span className="flex items-center">
-                <FaLocationDot className="ml-2 animate-bounce" />
-                {Lodge.area}
-              </span>
-            </div>
+    <div
+      className="overflow-hidden transition duration-300 border shadow bg-primary border-primary/20 rounded-xl hover:shadow-lg"
+      data-aos="fade-up"
+    >
+      <img
+        className="object-cover w-full h-48"
+        src={Lodge.image || "https://dummyimage.com/721x401"}
+        alt={Lodge.name}
+      />
+
+      <div className="p-5 text-secondary">
+        <h3 className="mb-1 text-xs font-semibold tracking-wide text-gray-400 uppercase">
+          Details
+        </h3>
+        <h2 className="mb-2 text-xl font-bold">{Lodge.name}</h2>
+        <p className="mb-3 text-sm">{description}</p>
+
+        {Lodge.description?.length > 122 && (
+          <button
+            onClick={() => setShowFullDescription((prev) => !prev)}
+            className="mb-3 text-sm font-medium text-blue-600 hover:underline"
+          >
+            {showFullDescription ? "Show Less" : "Read More"}
+          </button>
+        )}
+
+        <div className="flex items-center justify-between mt-4 text-sm text-gray-700">
+          <Link
+            to={`/Lodges/${Lodge.id}`}
+            className="inline-flex items-center gap-1 font-medium text-blue-600 hover:underline"
+          >
+            Learn More <FaArrowRight className="text-xs" />
+          </Link>
+
+          <div className="flex items-center gap-1">
+            <FaLocationDot className="text-red-500" />
+            <span>{Lodge.area}</span>
           </div>
         </div>
       </div>

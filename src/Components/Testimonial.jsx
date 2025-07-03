@@ -1,4 +1,4 @@
-import React from "react";
+
 import Testimonials from "../Testimonial.json";
 import Section6 from "./Section6";
 
@@ -7,8 +7,8 @@ const Testimonial = ({isHome}) => {
 
   return (
     <section className="text-primary body-font">
-      <div className="container px-5 py-20 mx-auto">
-        <h1 className="text-3xl text-secondary font-medium title-font mb-12 text-center">
+      <div className="px-5 py-20 mx-aut0">
+        <h1 className="mb-12 text-3xl font-medium text-center text-secondary title-font">
           Testimonials
         </h1>
         <div  className={`grid ${
